@@ -146,11 +146,6 @@ class ExercicioCoherencia(QMainWindow):
                 # Si marco Checkbox Azul, voy a la coherencia Azul
                 self.update_coherence("blue", 1)
 
-        # Si se DESMARCA (state == Qt.Unchecked) y el otro está marcado, no hacemos nada.
-        # Si se desmarca y es el único, podríamos ir a Blanco, pero nos ceñimos a las dos páginas.
-        # En este caso, al estar vinculados a 'update_coherence', al desmarcar uno, el otro se quedará marcado,
-        # forzando a que la página se quede en la otra opción (comportamiento exclusivo).
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
